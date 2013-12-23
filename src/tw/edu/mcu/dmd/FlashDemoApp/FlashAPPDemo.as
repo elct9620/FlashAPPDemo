@@ -3,6 +3,7 @@ package tw.edu.mcu.dmd.FlashDemoApp
 	import citrus.core.starling.StarlingCitrusEngine;
 	import citrus.core.starling.ViewportMode;
 	
+	import tw.edu.mcu.dmd.FlashDemoApp.state.ButtonState;
 	import tw.edu.mcu.dmd.FlashDemoApp.state.MyFirstState;
 	
 	public class FlashAPPDemo extends StarlingCitrusEngine
@@ -24,7 +25,7 @@ package tw.edu.mcu.dmd.FlashDemoApp
 		{
 			new MyTheme();
 			
-			this.state = new MyFirstState();
+			this.state = new ButtonState();
 		}
 	}
 }
