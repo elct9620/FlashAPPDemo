@@ -18,6 +18,7 @@ package tw.edu.mcu.dmd.FlashDemoApp.state
 			super.initialize();
 			
 			var button:Button = new Button();
+			button.nameList.add("my-style");
 			button.label = "Go to First State";
 			this.addChild(button);
 			button.validate();
