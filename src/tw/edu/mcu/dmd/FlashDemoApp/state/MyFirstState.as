@@ -27,7 +27,6 @@ package tw.edu.mcu.dmd.FlashDemoApp.state
 		override public function initialize():void
 		{
 			super.initialize();
-			this.stage.color = 0x000000;
 			
 			asset.enqueue(File.applicationDirectory.resolvePath("assets/Logo.png"));
 			asset.loadQueue(handleAssetLoading);

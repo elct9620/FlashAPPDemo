@@ -22,6 +22,8 @@ package tw.edu.mcu.dmd.FlashDemoApp
 		
 		override public function handleStarlingReady():void
 		{
+			new MyTheme();
+			
 			this.state = new MyFirstState();
 		}
 	}
