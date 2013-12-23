@@ -4,6 +4,7 @@ package tw.edu.mcu.dmd.FlashDemoApp.state
 	
 	import citrus.core.starling.StarlingState;
 	import citrus.objects.platformer.box2d.Hero;
+	import citrus.objects.platformer.box2d.Platform;
 	import citrus.physics.box2d.Box2D;
 	
 	import starling.display.Image;
@@ -45,6 +46,11 @@ package tw.edu.mcu.dmd.FlashDemoApp.state
 			var player:Hero = new Hero("player", {view: logo, width: logo.width, height: logo.height});
 			player.x = stage.stageWidth / 2;
 			this.add(player);
+			
+			var platform:Platform = new Platform("platform", {width: stage.stageWidth, height: 50});
+			platform.x = stage.stageWidth / 2;
+			platform.y = stage.stageHeight * 0.75;
+			this.add(platform);
 		}
 	}
 }
